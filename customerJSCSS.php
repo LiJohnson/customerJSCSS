@@ -67,11 +67,12 @@ class CustomCssAndScript
 			<input type=submit class='button-primary' value=添加 />
 		</form>
 		<?php
+		$td_style = 'style="border-width:1px;border-bottom-style:solid;"';
 		echo '<table style="width:50%">';
 		foreach( $data as $key => $file )
 		{
 			echo '<tr>';
-			echo "<td style='border-width:1px;border-bottom-style:solid;'><b>$file[type]</b></td><td style='border-width:1px;border-bottom-style:solid;' title='$file[url]'>$file[url]</td><td style='border-width:1px;border-bottom-style:solid;width:30px'><form method=post ><input type=hidden name=delete value=$key /><input type=submit value=删除 /></form></td>";;
+			echo "<td $td_style ><b>$file[type]</b></td><td $td_style title='$file[url]'>$file[url]</td><td $td_style width=30 ><form method=post ><input type=hidden name=delete value=$key /><input type=submit value=删除 /></form></td>";;
 			echo '</tr>';
 		}
 		echo '</table>';

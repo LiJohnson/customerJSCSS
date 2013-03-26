@@ -51,3 +51,7 @@ text-shadow:rgb(0, 0, 0) 2px 4px 7px;
 	     -o-transition: all .3s ease-in-out;
 	     	transition: all .3s ease-in-out;
 }
+
+
+img[src*=sinaimg]{cursor: url(http://img.t.sinajs.cn/t5/style/images/common/big.cur),auto;}
+img[src*=sinaimg][src*=large]{cursor: url(http://img.t.sinajs.cn/t5/style/images/common/small.cur), auto!important;}

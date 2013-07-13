@@ -74,7 +74,7 @@ class CustomCssAndScript
 		<br>
 		<form method=post >
 			<select name=type>
-				<?php foreach($this->fileType as $k => $v){echo "<option value=$k>$v</option>";} ?>
+				<?php foreach($this->fileType as $k => $v){$selected = $k == $edit['type'] ? 'selected' : '' ;echo "<option value=$k $selected >$v</option>";} ?>
 			</select>
 			<input type=url name=url placeholder=url... value="<?php echo $edit['url']; ?>" />
 			<label><input type=checkbox name=frontEnd value=frontEnd <?php echo $edit['frontEnd'] ? 'checked':''; ?> />前台</label>

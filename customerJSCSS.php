@@ -80,11 +80,10 @@ class CustomCssAndScript
 			<label><input type=checkbox name=frontEnd value=frontEnd <?php echo $edit['frontEnd'] ? 'checked':''; ?> />前台</label>
 			<label><input type=checkbox name=backEnd value=backEnd <?php echo $edit['backEnd'] ? 'checked':''; ?> />后台</label>
 			<input type=hidden name=add value=add />
-			<input type=submit class='button-primary' value=添加 />
+			<input type=submit class='button-primary' value='save' />
 		</form>
 		<hr>
 		<?php
-		$td_style =''; 'style="border-width:1px;border-bottom-style:solid;"';
 		echo '<table class="wp-list-table widefat plugins" >';
 		echo "<tr><th>类型</th><th>url</th><th>作用域</th><th>操作</th></tr>";
 		foreach( $data as $key => $file ){

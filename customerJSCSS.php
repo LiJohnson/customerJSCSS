@@ -85,12 +85,12 @@ class CustomCssAndScript
 		<hr>
 		<?php
 		echo '<table class="wp-list-table widefat plugins" >';
-		echo "<tr><th>类型</th><th>url</th><th>作用域</th><th>操作</th></tr>";
+		echo "<tr><th>type</th><th>url</th><th>scope</th><th>option</th></tr>";
 		foreach( $data as $key => $file ){
 			echo '<tr>';
 			echo "<td ><b>$file[type]</b></td> <td ><a href='$file[url]' >$file[url]</a> </td><td>$file[frontEnd] $file[backEnd]</td> <td >";
-			echo "<form method=post ><input type=hidden name=edit value=$key /><input type=submit value=编辑 /></form>";
-			echo "<form method=post ><input type=hidden name=delete value=$key /><input type=submit value=删除 /></form>";
+			echo "<form method=post ><input type=hidden name=edit value=$key /><input type=submit value=edt /></form>";
+			echo "<form method=post ><input type=hidden name=delete value=$key /><input type=submit value=del /></form>";
 			echo "</td>";
 			echo '</tr>';
 		}

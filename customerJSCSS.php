@@ -8,16 +8,13 @@ Version: 1.0
 Author URI: http://weibo.com/lijohnson
 */
 
-if( !class_exists('CustomCssAndScript') )
-{
+if( !class_exists('CustomCssAndScript') ){
 
 
-class CustomCssAndScript
-{
+class CustomCssAndScript{
 	private $fileType ;
 	
-	function CustomCssAndScript()
-	{
+	function CustomCssAndScript(){
 		$this->fileType = array('css' => 'css' , 'js'=>'javascript');
 		$data = $this->getOption();
 		add_action('admin_head', array($this,"headAction"));
@@ -25,8 +22,7 @@ class CustomCssAndScript
 		add_action('admin_menu', array($this,"adminMenuAction"));
 	}
 	
-	function headAction($a)
-	{
+	function headAction($a){
 		$data = $this->getOption();
 		$s = $this->isFrontPage() ? 'frontEnd' : 'backEnd';
 		foreach( $data as $file ){

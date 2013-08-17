@@ -53,7 +53,7 @@ text-shadow:rgb(0, 0, 0) 2px 4px 7px;
 }
 
 /*高亮今天的日期*/
-td#today { font-weight: bold;  color: rgb(207, 0, 0);font-size: 15px;}
+td#today { font-weight: bold;background-color: rgb(255, 234, 234);  color: rgb(207, 0, 0);font-size: 15px;}
 
 img[src*=sinaimg]{cursor: -webkit-zoom-in;}
 img[src*=sinaimg][src*=large]{cursor:-webkit-zoom-out !important;}

@@ -84,9 +84,9 @@ class CustomCssAndScript{
 		echo "<tr><th>type</th><th>url</th><th>scope</th><th>option</th></tr>";
 		foreach( $data as $key => $file ){
 			echo '<tr>';
-			echo "<td ><b>$file[type]</b></td> <td ><a href='$file[url]' >$file[url]</a> </td><td>$file[frontEnd] $file[backEnd]</td> <td >";
-			echo "<form method=post ><input type=hidden name=edit value=$key /><input type=submit value=edt /></form>";
-			echo "<form method=post ><input type=hidden name=delete value=$key /><input type=submit value=del /></form>";
+			echo "<td ><b>$file[type]</b></td> <td ><a href='$file[url]' target=_blank >$file[url]</a> </td><td>$file[frontEnd] $file[backEnd]</td> <td >";
+			echo "<form method=post ><input type=hidden name=edit value=$key />  <input type=submit class=button value=edt /></form> ";
+			echo "<form method=post ><input type=hidden name=delete value=$key /><input type=submit class=button value=del /></form>";
 			echo "</td>";
 			echo '</tr>';
 		}

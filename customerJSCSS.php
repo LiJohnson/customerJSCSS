@@ -33,7 +33,7 @@ class CustomCssAndScript{
 				echo '<link rel="stylesheet" href="'.$file['url'].'">';
 			}
 			else if( $file['type'] === 'js' ){
-				echo '<script src="'.$file['url'].'" ></script>';
+				echo '<script async="async" src="'.$file['url'].'" ></script>';
 			}
 		}
 	}

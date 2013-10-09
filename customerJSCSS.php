@@ -86,7 +86,7 @@ class CustomCssAndScript{
 			echo '<tr>';
 			echo "<td ><b>$file[type]</b></td> <td ><a href='$file[url]' target=_blank >$file[url]</a> </td><td>$file[frontEnd] $file[backEnd]</td> <td >";
 			echo "<form method=post ><input type=hidden name=edit value=$key />  <input type=submit class=button value=edt /></form> ";
-			echo "<form method=post ><input type=hidden name=delete value=$key /><input type=submit class=button value=del /></form>";
+			echo "<form method=post onsubmit=\"return confirm('sure delete ?')\" ><input type=hidden name=delete value=$key /><input type=submit class=button value=del /></form>";
 			echo "</td>";
 			echo '</tr>';
 		}

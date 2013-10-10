@@ -61,4 +61,5 @@ img[src*=sinaimg][src*=large]{cursor:-webkit-zoom-out ;}
 img[src*=theotherdoor][src*='150x150']{cursor: -webkit-zoom-in;}
 img[src*=theotherdoor]{cursor:-webkit-zoom-out;}
 #fixedImg{position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.780392); }
+#fixedImg #img{position: absolute;}
 #fixedImg img[src*=theotherdoor],#fixedImg img[src*=sinaimg]{cursor:move;border-radius:5px;}

@@ -67,3 +67,5 @@ img[src*=sinaimg],img[src*=theotherdoor-wp]{margin: 1px;border: 1px solid rgb(24
 #fixedImg #img{position: absolute;}
 #fixedImg img[src*=theotherdoor],#fixedImg img[src*=sinaimg]{cursor:move;border-radius:5px;}
 
+#nav li a {font-weight: normal;}
+

@@ -54,7 +54,7 @@ text-shadow:rgb(0, 0, 0) 2px 4px 7px;
 
 /*高亮今天&&周日的日期*/
 table#wp-calendar td#today{ font-weight: bold;background-color: rgb(255, 234, 234);  color: rgb(207, 0, 0);font-size: 15px;}
-table#wp-calendar tbody tr td:last-child{background: rgb(239, 249, 255);}
+table#wp-calendar tbody tr td:last-child:not(.pad){background: rgb(239, 249, 255);}
 table#wp-calendar{border-collapse: collapse;}
 
 img[src*=sinaimg]{cursor: -webkit-zoom-in;}

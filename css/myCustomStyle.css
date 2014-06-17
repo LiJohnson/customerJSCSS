@@ -74,14 +74,16 @@ img[src*=sinaimg],img[src*=theotherdoor-wp]{margin: 1px;border: 1px solid rgb(24
 
 
 /******** button ******/
-.suffusion-custom .button:hover,.suffusion-custom input[type="submit"]:hover:not(.searchsubmit),.suffusion-custom .button:active,.suffusion-custom input[type="submit"]:active:not(.searchsubmit) {
+.suffusion-custom .button:hover,.suffusion-custom input[type="submit"]:hover:not(.searchsubmit) {
 	font-weight:400;
 	background:#a5a7aa url('') repeat-x top left;
 	border:1px solid #ccc;
 	border-right-color:#aaa;
 	border-bottom-color:#aaa
 }
-
+.suffusion-custom .button:active,.suffusion-custom input[type="submit"]:active:not(.searchsubmit) {
+	background: inherit;
+}
 .suffusion-custom .button {
 	border:1px solid #ccc;
 	border-right-color:#aaa;

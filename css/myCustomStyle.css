@@ -118,6 +118,8 @@ img[src*=sinaimg],img[src*=theotherdoor-wp]{margin: 1px;border: 1px solid rgb(24
 	background: transparent;
 	font-weight:normal;
 	font-size:18px;
+	padding-right: 30px;
+	padding-left: 30px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;

@@ -89,7 +89,7 @@ img[src*=sinaimg],img[src*=theotherdoor-wp]{margin: 1px;border: 1px solid rgb(24
 	border-right-color:#aaa;
 	border-bottom-color:#aaa
 }
-.suffusion-custom > #wrapper {
+.suffusion-custom > #wrapper , .suffusion-custom > #nav-top {
 	-webkit-box-shadow:rgb(0, 0, 0) 0px 0px 30px 0px;
 	-moz-box-shadow:rgb(0, 0, 0) 0px 0px 30px 0px;
 	box-shadow:rgb(0, 0, 0) 0px 0px 30px 0px;
@@ -128,5 +128,16 @@ img[src*=sinaimg],img[src*=theotherdoor-wp]{margin: 1px;border: 1px solid rgb(24
 #nav-top ul.sf-menu li a:hover , #nav-top ul.sf-menu li a.current {
 	color:#eee;
 	background: rgb(136,136,136);
+}
+#nav-top.nav-fixed{
+	position: fixed;
+	left: 0;
+	z-index: 999999;
+}
+#nav-top.nav-fixed.out{
+	top:-50px;
+}
+#nav-top.nav-fixed.out.in{
+	top:0px;
 }
 /********** end nav ***********/

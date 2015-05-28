@@ -141,3 +141,13 @@ img[src*=sinaimg],img[src*=theotherdoor-wp]{margin: 1px;border: 1px solid rgb(24
 	top:0px;
 }
 /********** end nav ***********/
+
+/******小屏显示自定义菜单********/
+@media screen and (max-width: 782px) {
+  #wp-toolbar > ul > li {
+    display: block;
+  }
+}
+/******end 小屏显示自定义菜单****/
+
+
